@@ -197,7 +197,7 @@ const Weather = () => {
           
           {/* Table Content */}
           <div className="overflow-x-auto">
-            <table className="w-full">
+            <table className="w-full min-w-[600px]">
               {/* Column Headers */}
               <thead className="bg-gray-50">
                 <tr>

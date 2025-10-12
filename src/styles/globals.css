@@ -11,6 +11,23 @@ html, body {
   @apply bg-bg text-ink font-sans text-base;
 }
 
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  html, body {
+    @apply text-mobile-lg; /* Slightly larger base text on mobile */
+  }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better mobile padding */
+  .container {
+    @apply px-4;
+  }
+}
+
 /* Utility aliases (component classes) */
 .btn-primary {
   @apply inline-flex items-center justify-center min-h-14 px-5 rounded-xl2 text-white font-bold
@@ -35,10 +52,35 @@ html, body {
   @apply w-11 h-11 rounded-full grid place-items-center bg-blue-50 text-pri-600;
 }
 .hero {
-  @apply bg-hero-grad text-white rounded-3xl p-6 md:p-10;
+  @apply bg-hero-grad text-white rounded-3xl p-4 sm:p-6 md:p-10;
 }
 .section {
-  @apply py-10 md:py-sectionY;
+  @apply py-mobile-section md:py-sectionY;
+}
+
+/* Mobile-optimized components */
+@media (max-width: 768px) {
+  .btn-primary, .btn-secondary {
+    @apply min-h-12 px-4 text-base; /* Smaller buttons on mobile */
+  }
+  
+  .card {
+    @apply p-4; /* Less padding on mobile */
+  }
+  
+  .hero {
+    @apply p-4 text-center; /* Center text on mobile */
+  }
+  
+  /* Better text wrapping for Thai */
+  h1, h2, h3, h4, h5, h6 {
+    @apply break-words;
+  }
+  
+  /* Prevent text overflow */
+  p, span, div {
+    @apply break-words;
+  }
 }
 
 /* Custom animations */

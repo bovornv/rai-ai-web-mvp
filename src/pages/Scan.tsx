@@ -157,12 +157,12 @@ const Scan = () => {
             <div className="card">
               {state.status === "loading" ? (
                 /* Analysis Spinner */
-                <div className="text-center p-12">
-                  <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-green-500 mx-auto mb-6"></div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <div className="text-center p-8 sm:p-12">
+                  <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-b-4 border-green-500 mx-auto mb-4 sm:mb-6"></div>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
                     {t('scan.scanDemo.analyzing')}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-sm sm:text-base text-gray-600">
                     {isThai ? 'กรุณารอสักครู่...' : 'Please wait...'}
                   </p>
                 </div>
@@ -199,7 +199,7 @@ const Scan = () => {
                     "rounded-2xl border-2 border-dashed",
                     "cursor-pointer",
                     dragOver ? "border-green-600 bg-green-50" : "border-gray-300 bg-white",
-                    "p-6 sm:p-8 flex flex-col items-center justify-center text-center min-h-[240px]",
+                    "p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center text-center min-h-[200px] sm:min-h-[240px]",
                     "transition-all duration-200 hover:border-green-400 hover:bg-green-50",
                     "focus-within:ring-2 focus-within:ring-green-500 focus-within:ring-offset-2"
                   ].join(" ")}
@@ -208,20 +208,20 @@ const Scan = () => {
                   onDragLeave={(e) => { e.preventDefault(); setDragOver(false); }}
                   onDrop={onDrop}
                 >
-                  <div className="text-6xl mb-4">📷</div>
-                  <div className="text-2xl font-bold text-gray-900 mb-2">
+                  <div className="text-4xl sm:text-6xl mb-3 sm:mb-4">📷</div>
+                  <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                     {isThai ? 'สแกน' : 'Scan'}
                   </div>
-                  <div className="text-lg text-gray-600 mb-2">
+                  <div className="text-base sm:text-lg text-gray-600 mb-2 px-2">
                     {isThai 
                       ? "แตะเพื่อถ่ายภาพ หรือ ลากรูปมาวาง" 
                       : "Tap to use camera or drag & drop"
                     }
                   </div>
-                  <div className="text-sm text-gray-500 mb-4">
+                  <div className="text-sm text-gray-500 mb-3 sm:mb-4 px-2">
                     {t('scan.scanDemo.singlePhotoHelper')}
                   </div>
-                  <div className="text-xs text-gray-400">
+                  <div className="text-xs text-gray-400 px-2">
                     {isThai 
                       ? "ระบบจะตรวจสอบชนิดพืชอัตโนมัติ (ข้าว/ทุเรียน)"
                       : "Automatic crop detection (Rice/Durian)"

@@ -51,39 +51,39 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="hero grid lg:grid-cols-2 gap-6 items-center">
               {/* Left Column - Text */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-display-1 mb-6">
+              <div className="text-center lg:text-left order-2 lg:order-1">
+                <h1 className="text-display-1 mb-4 lg:mb-6">
                   {t('home.hero_title')}
                 </h1>
-                <p className="text-xl text-white/90 mb-8 leading-relaxed">
+                <p className="text-lg sm:text-xl text-white/90 mb-6 lg:mb-8 leading-relaxed">
                   {t('home.hero_sub')}
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 lg:mb-8">
                   <Link
                     to="/apkdownload"
-                    className="btn-primary"
+                    className="btn-primary w-full sm:w-auto"
                   >
-                    <Download className="w-6 h-6 mr-2" />
+                    <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
                     <span>{t('home.download')}</span>
                   </Link>
                   <Link
                     to="/weather"
-                    className="btn-secondary bg-white/10 border-white/20 text-white hover:bg-white/20"
+                    className="btn-secondary bg-white/10 border-white/20 text-white hover:bg-white/20 w-full sm:w-auto"
                   >
-                    <Play className="w-6 h-6 mr-2" />
+                    <Play className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
                     <span>{t('home.try_demo')}</span>
                   </Link>
                 </div>
 
-                <p className="text-sm text-white/70">
+                <p className="text-sm text-white/70 px-2">
                   {t('home.privacy_note')}
                 </p>
               </div>
 
               {/* Right Column - Phone Mockup */}
-              <div className="flex justify-center lg:justify-end">
-                <div className="card p-4 md:p-6 max-w-sm">
+              <div className="flex justify-center lg:justify-end order-1 lg:order-2 mb-6 lg:mb-0">
+                <div className="card p-3 sm:p-4 md:p-6 max-w-xs sm:max-w-sm">
                   <PhoneMock />
                 </div>
               </div>
@@ -120,7 +120,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {features.map((feature) => {
                 const Icon = feature.icon;
                 return (
@@ -129,20 +129,20 @@ const Home = () => {
                     to={feature.path}
                     className="group"
                   >
-                    <div className="card p-6 text-center group-hover:scale-105 transition-all duration-300">
-                      <div className="icon-circle mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-6 h-6" />
+                    <div className="card p-4 sm:p-6 text-center group-hover:scale-105 transition-all duration-300">
+                      <div className="icon-circle mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                       </div>
-                      <div className="badge mb-4">
+                      <div className="badge mb-3 sm:mb-4 text-xs sm:text-sm">
                         {isThai ? 'ตัวอย่าง' : 'Demo'}
                       </div>
-                      <h3 className="text-xl font-semibold text-ink mb-4">
+                      <h3 className="text-lg sm:text-xl font-semibold text-ink mb-3 sm:mb-4">
                         {feature.title}
                       </h3>
-                      <p className="text-ink-soft mb-4">
+                      <p className="text-sm sm:text-base text-ink-soft mb-4">
                         {feature.description}
                       </p>
-                      <div className="text-pri-600 text-sm font-medium group-hover:text-pri-700">
+                      <div className="text-pri-600 text-xs sm:text-sm font-medium group-hover:text-pri-700">
                         {t('home.full_in_app')} →
                       </div>
                     </div>
@@ -164,16 +164,16 @@ const Home = () => {
         {/* Download CTA Section */}
         <section className="section">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-cta-grad rounded-2xl p-8 text-white text-center">
-              <h2 className="text-display-2 mb-4">
+            <div className="bg-cta-grad rounded-2xl p-4 sm:p-6 lg:p-8 text-white text-center">
+              <h2 className="text-display-2 mb-3 sm:mb-4">
                 {t('help.downloadCta')}
               </h2>
-              <p className="text-lg text-white/90 mb-6">
+              <p className="text-base sm:text-lg text-white/90 mb-4 sm:mb-6 px-2">
                 {t('help.note')}
               </p>
               <Link
                 to="/apkdownload"
-                className="bg-white text-pri-600 px-8 py-4 rounded-xl2 font-bold text-lg inline-flex items-center space-x-2 hover:bg-white/90 transition-colors duration-200 shadow-lg"
+                className="bg-white text-pri-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl2 font-bold text-base sm:text-lg inline-flex items-center space-x-2 hover:bg-white/90 transition-colors duration-200 shadow-lg w-full sm:w-auto"
               >
                 <span>{t('help.playStore')}</span>
               </Link>

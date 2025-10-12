@@ -20,9 +20,15 @@ i18n
   .init({
     resources,
     fallbackLng: 'th',
+    lng: 'th', // Force Thai as default
     debug: false,
     interpolation: {
       escapeValue: false
+    },
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng'
     }
   });
 

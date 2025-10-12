@@ -69,13 +69,21 @@ export default {
         "cta-grad": "linear-gradient(135deg, #2563eb 0%, #14b8a6 100%)",
       },
       fontSize: {
-        // BIG defaults for rural readability
-        base: ["18px", { lineHeight: "1.55" }],
-        "display-1": ["clamp(28px,4vw,40px)", { fontWeight: "800", letterSpacing: "0.2px" }],
-        "display-2": ["clamp(22px,3vw,28px)", { fontWeight: "700" }],
+        // BIG defaults for rural readability - optimized for mobile
+        base: ["16px", { lineHeight: "1.6" }], // Slightly smaller on mobile
+        lg: ["18px", { lineHeight: "1.6" }], // Standard large text
+        xl: ["20px", { lineHeight: "1.5" }], // Large text
+        "2xl": ["24px", { lineHeight: "1.4" }], // Extra large
+        "display-1": ["clamp(24px,6vw,40px)", { fontWeight: "800", letterSpacing: "0.1px", lineHeight: "1.2" }], // Better mobile scaling
+        "display-2": ["clamp(20px,5vw,28px)", { fontWeight: "700", lineHeight: "1.3" }], // Better mobile scaling
+        "mobile-lg": ["18px", { lineHeight: "1.6" }], // Mobile-optimized large text
+        "mobile-xl": ["20px", { lineHeight: "1.5" }], // Mobile-optimized extra large
       },
       spacing: {
         sectionY: "4.5rem", // ~72px (desktop section padding)
+        "mobile-section": "2rem", // ~32px (mobile section padding)
+        "mobile-p": "1rem", // ~16px (mobile padding)
+        "mobile-p-lg": "1.5rem", // ~24px (mobile large padding)
       },
       screens: {
         "3xl": "1600px",
