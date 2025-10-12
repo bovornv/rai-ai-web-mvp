@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MapPin, CloudRain, Wind, Thermometer } from 'lucide-react';
 
@@ -13,7 +13,7 @@ interface WeatherData {
 const TodayAtFarm = () => {
   const { t, i18n } = useTranslation();
   const isThai = i18n.language === 'th';
-  const [location, setLocation] = useState(isThai ? 'กรุงเทพมหานคร' : 'Bangkok');
+  const [location] = useState(isThai ? 'กรุงเทพมหานคร' : 'Bangkok');
   const [weather, setWeather] = useState<WeatherData>({
     rainChance: 20,
     windSpeed: 8,

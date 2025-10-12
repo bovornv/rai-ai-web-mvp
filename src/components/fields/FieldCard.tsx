@@ -18,7 +18,7 @@ const FieldCard: React.FC<FieldCardProps> = ({
   highlight, 
   onClick 
 }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isThai = i18n.language === 'th';
 
   const getCropIcon = (crop: string) => {

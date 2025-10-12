@@ -10,7 +10,7 @@ interface FieldMapProps {
 }
 
 const FieldMap: React.FC<FieldMapProps> = ({ fields, selectedId, onSelect }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isThai = i18n.language === 'th';
 
   const getCropIcon = (crop: string) => {

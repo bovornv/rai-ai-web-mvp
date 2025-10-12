@@ -1,9 +1,8 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Download, Smartphone, MapPin, Camera, BarChart3, Play } from 'lucide-react';
+import { Download, MapPin, Camera, BarChart3, Play } from 'lucide-react';
 
 const DownloadCTA: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isThai = i18n.language === 'th';
 
   const features = [

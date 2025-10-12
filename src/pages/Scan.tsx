@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Camera, Download } from 'lucide-react';
+import { Camera } from 'lucide-react';
 import SEO from '../components/SEO';
 import InstructionCard from '../components/InstructionCard';
 import DemoLimitCard from '../components/DemoLimitCard';
 import ResultCard from '../components/ResultCard';
-import { analyzeImageMock, ScanResult, CropType } from '../mocks/scanMock';
+import { analyzeImageMock, ScanResult } from '../mocks/scanMock';
 
 // Downscale helper function
 async function downscaleToDataUrl(file: File, maxSide = 1280): Promise<string> {

@@ -16,7 +16,7 @@ interface FarmSummaryProps {
 }
 
 const FarmSummary: React.FC<FarmSummaryProps> = ({ data }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isThai = i18n.language === 'th';
 
   const summaryItems = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ScanResult, getConfidenceColor, getCropIcon } from '../mocks/scanMock';
 
@@ -8,7 +7,7 @@ type Props = {
 };
 
 const ResultCard = ({ result, imagePreview }: Props) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isThai = i18n.language === 'th';
 
   return (

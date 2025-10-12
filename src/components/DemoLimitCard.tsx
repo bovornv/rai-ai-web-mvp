@@ -1,10 +1,8 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Download } from 'lucide-react';
 
 const DemoLimitCard = () => {
-  const { t, i18n } = useTranslation();
-  const isThai = i18n.language === 'th';
+  const { t } = useTranslation();
 
   return (
     <div className="rounded-2xl border border-amber-300 bg-amber-50 p-6 mb-6">

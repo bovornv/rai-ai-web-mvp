@@ -154,7 +154,7 @@ export const MOCK_RESULTS: ScanResult[] = [
   }
 ];
 
-export const analyzeImageMock = async (file: File, crop?: CropType): Promise<ScanResult> => {
+export const analyzeImageMock = async (_file: File, crop?: CropType): Promise<ScanResult> => {
   // Simulate analysis delay (0.5-1s)
   const delay = Math.random() * 500 + 500;
   await new Promise(resolve => setTimeout(resolve, delay));
