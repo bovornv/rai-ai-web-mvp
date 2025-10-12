@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://raiai.app/sitemap.xml
+
+# Block admin and API areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /weather
+Allow: /scan
+Allow: /fields
+Allow: /about
+Allow: /help
+Allow: /download
+
+# Crawl delay (optional)
+Crawl-delay: 1

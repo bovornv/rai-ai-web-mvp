@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "weather": "Weather",
+    "scan": "Scan",
+    "fields": "Fields",
+    "about": "About",
+    "help": "Help",
+    "download": "Download"
+  },
+  "home": {
+    "title": "Rai AI – Smart Farming",
+    "subtitle": "Smart Farming Companion for Thai Farmers",
+    "description": "AI-powered weather checking, plant disease scanning, and farming recommendations",
+    "tryFree": "Try Free",
+    "downloadApp": "Download App",
+    "readyToStart": "Ready to start smart farming?",
+    "hero_title": "Scan plant diseases, check weather, know when to spray—easy for Thai farmers",
+    "hero_sub": "Check daily in minutes, know rain, wind, prices",
+    "try_demo": "Try on web (demo)",
+    "download": "Install from Google Play",
+    "today_at_farm": "Today at your farm",
+    "spray_ok": "Good to spray",
+    "spray_caution": "Caution",
+    "spray_dont": "Don't spray today",
+    "rain": "Rain",
+    "wind": "Wind",
+    "temp": "Temperature",
+    "why_download": "Why download the app?",
+    "full_in_app": "Full features in app",
+    "demo_web": "Try demos on web",
+    "privacy_note": "No login required during trial",
+    "features": {
+      "weather": {
+        "title": "Weather Check",
+        "description": "3-5 day weather forecast"
+      },
+      "scan": {
+        "title": "Disease Scan",
+        "description": "Plant disease detection from photos"
+      },
+      "fields": {
+        "title": "Field Management",
+        "description": "View and manage your farm fields"
+      }
+    }
+  },
+  "weather": {
+    "title": "Weather Check",
+    "subtitle": "3-5 day weather forecast",
+    "location": "Location",
+    "selectLocation": "Select District/Province",
+    "forecast": "Weather Forecast",
+    "forecastDescription": "Data from Thai Meteorological Department",
+    "temperature": "Temperature",
+    "rainProbability": "Rain Probability",
+    "windSpeed": "Wind Speed",
+    "humidity": "Humidity",
+    "loading": "Loading weather data...",
+    "error": "Unable to load weather data"
+  },
+  "scan": {
+    "title": "Plant Disease Scan",
+    "uploadImage": "Upload Image",
+    "takePhoto": "Take Photo",
+    "analyzing": "Analyzing...",
+    "result": "Analysis Result",
+    "disease": "Disease Found",
+    "confidence": "Confidence",
+    "recommendation": "Recommendation",
+    "downloadForUnlimited": "Download App for Unlimited Scans",
+    "mockResult": {
+      "disease": "Brown Spot Disease Detected",
+      "confidence": "85%",
+      "recommendation": "Recommend applying fungicide and improving field ventilation"
+    },
+    "scanDemo": {
+      "title": "Scan Rice/Durian Leaf (Demo)",
+      "analyzing": "Analyzing (demo)…",
+      "demoOnly": "This is a demo result only",
+      "ppe": "Personal Protective Equipment (PPE)",
+      "unlimitedInApp": "Unlimited scans in the app (Download)",
+      "limitReached": "Demo limit reached (2 scans). Get full version in the app.",
+      "scanLimit": "Demo scans: 2 per session",
+      "confidence": "Confidence",
+      "recommendations": "Recommendations",
+      "disease": "Disease",
+      "pest": "Pest",
+      "deficiency": "Deficiency",
+      "cropDetected": "Detected:",
+      "rice": "Rice",
+      "durian": "Durian",
+      "useCamera": "Use camera",
+      "uploadPhoto": "Upload photo",
+      "imagesOnly": "Images only",
+      "demoLimit": "Demo limit reached (2 scans). Get full version in the app.",
+      "instructions": {
+        "title": "How to scan:",
+        "step1": "Bright light, no backlight",
+        "step2": "One leaf fills the frame, plain background",
+        "step3": "Hold 15–25 cm away, focus, then capture",
+        "cropSupport": "Demo supports Rice / Durian only"
+      },
+      "demoLimits": {
+        "webDemo": "Web demo scan: single photo, limited accuracy, no history.",
+        "fullApp": "For unlimited scans + weather-aware advice → Download the app",
+        "downloadApp": "Download App",
+        "aiGuidance": "AI guidance only—always double-check in the field"
+      },
+      "validation": {
+        "imageTooSmall": "Image too small, please try again",
+        "invalidFormat": "Please select .jpg, .jpeg or .png files only",
+        "fileTooLarge": "File too large (max 5MB)"
+      },
+      "singlePhotoHelper": "Pick or capture one photo and analysis starts immediately (no second photo needed)"
+    }
+  },
+  "fields": {
+    "title": "Farm Fields",
+    "subtitle": "Manage your farm fields, view maps, and track growth",
+    "fieldDetails": "Field Details",
+    "legend": "Legend",
+    "rice": "Rice",
+    "durian": "Durian",
+    "manageInApp": "Manage Fields in Mobile App",
+    "downloadApp": "Download App"
+  },
+  "about": {
+    "title": "About Us",
+    "teaser": "AI developed by Thais, for Thai farmers",
+    "mission": {
+      "title": "Our Mission",
+      "intro": "We created RaiAI to make technology truly useful for Thai farmers.",
+      "goal": "Our goal is to provide simple, affordable, and reliable farming information that anyone can understand — no matter where they live.",
+      "personal": "RaiAI is your small digital helper in the palm of your hand —",
+      "help": "helping you spot crop diseases, check the weather, and know when to spray or wait.",
+      "result": "We aim to reduce risk, increase yield, and use resources wisely."
+    }
+  },
+  "help": {
+    "title": "Help",
+    "faq": "Frequently Asked Questions",
+    "q1": "What is RaiAI?",
+    "a1": "RaiAI is a smart farming assistant made for Thai farmers. It helps you scan plant diseases, check the weather, and see crop prices. This website shows a demo — for full features, download the RaiAI mobile app.",
+    "q2": "Is it free to use?",
+    "a2": "Yes — RaiAI is free to use during the trial period, on both web and mobile. In the future, optional premium tools (like advanced alerts) may be added.",
+    "q3": "How accurate is the data?",
+    "a3": "The web version is a demo showing how RaiAI works. Some results are mock examples, not real detections. For real, accurate weather, photo analysis, and local advice, please use the RaiAI mobile app.",
+    "q4": "Do I need internet?",
+    "a4": "Yes — the web version needs an internet connection. However, in the RaiAI mobile app, some features work offline, like viewing saved forecasts or your field data.",
+    "q5": "Which crops can RaiAI scan?",
+    "a5": "Right now, RaiAI can scan rice and durian leaves for disease, pest, or nutrient issues. More crops (like mango, cassava, and palm) will be added soon.",
+    "q6": "Which phones can use RaiAI?",
+    "a6": "RaiAI works on most Android phones (version 9 and above) — OPPO, Vivo, Samsung, Xiaomi, etc. An iPhone version will be available later.",
+    "note": "This website is a demo version",
+    "downloadCta": "Download RaiAI App for full features",
+    "playStore": "Install from Google Play",
+    "contact": "Contact Us",
+    "contactSubtitle": "Get in touch with us through multiple channels",
+    "email": "Email",
+    "emailDesc": "Send questions to support@raiai.app",
+    "chat": "Chat",
+    "chatDesc": "Line OA: @raiai",
+    "supportHours": "Support Hours",
+    "appAvailable": "Application",
+    "appAvailableDesc": "Available 24/7",
+    "supportAvailable": "Support",
+    "supportAvailableDesc": "Monday-Friday 9:00-18:00"
+  },
+  "download": {
+    "title": "Download App",
+    "version": "Version",
+    "size": "Size",
+    "sha256": "SHA-256",
+    "installSteps": "Installation Steps",
+    "step1": "1. Download APK file",
+    "step2": "2. Enable installation from unknown sources",
+    "step3": "3. Install the app",
+    "step4": "4. Open app and start using",
+    "qrCode": "Scan QR Code to Download",
+    "playStore": "Download from Play Store"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "retry": "Retry",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close"
+  }
+}

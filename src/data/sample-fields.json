@@ -1,0 +1,30 @@
+{
+  "fields": [
+    {
+      "id": "1",
+      "name": "แปลงข้าว 1",
+      "type": "rice",
+      "coordinates": [100.5018, 13.7563],
+      "area": 2.5,
+      "status": "กำลังปลูก",
+      "crop": "ข้าวหอมมะลิ",
+      "plantingDate": "2024-01-15",
+      "expectedHarvest": "2024-04-15",
+      "soilType": "ดินร่วนปนทราย",
+      "irrigation": "ระบบน้ำหยด"
+    },
+    {
+      "id": "2",
+      "name": "สวนทุเรียน 1",
+      "type": "durian",
+      "coordinates": [100.5118, 13.7663],
+      "area": 1.8,
+      "status": "ให้ผลผลิต",
+      "crop": "ทุเรียนหมอนทอง",
+      "plantingDate": "2020-03-10",
+      "expectedHarvest": "2024-05-20",
+      "soilType": "ดินร่วนปนดินเหนียว",
+      "irrigation": "ระบบสปริงเกอร์"
+    }
+  ]
+}
