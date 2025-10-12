@@ -8,6 +8,10 @@
     "help": "Help",
     "download": "Download"
   },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Thai Farmer Assistant"
+  },
   "home": {
     "title": "Rai AI – Smart Farming",
     "subtitle": "Smart Farming Companion for Thai Farmers",

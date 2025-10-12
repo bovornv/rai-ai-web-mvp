@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const About = () => {
@@ -73,12 +74,12 @@ const About = () => {
             <p className="text-lg text-green-100 mb-6">
               {t('help.note')}
             </p>
-            <a
-              href="/apkdownload"
+            <Link
+              to="/apkdownload"
               className="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center space-x-2 hover:bg-green-50 transition-colors duration-200 shadow-lg"
             >
               <span>{t('help.playStore')}</span>
-            </a>
+            </Link>
           </div>
         </div>
         </div>

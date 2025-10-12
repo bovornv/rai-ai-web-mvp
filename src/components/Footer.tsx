@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -23,34 +24,34 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">ลิงก์ด่วน</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/weather" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/weather" className="text-white/80 hover:text-white transition-colors">
                   {t('nav.weather')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/scan" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/scan" className="text-white/80 hover:text-white transition-colors">
                   {t('nav.scan')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/fields" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/fields" className="text-white/80 hover:text-white transition-colors">
                   {t('nav.fields')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/help" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/help" className="text-white/80 hover:text-white transition-colors">
                   {t('nav.help')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">ผู้ช่วยเกษตรกรไทย</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.contact')}</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-white/60" />

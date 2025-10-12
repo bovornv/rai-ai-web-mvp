@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Camera, Bell, MapPin, Download } from 'lucide-react';
 
 const WhyDownload = () => {
@@ -62,13 +63,13 @@ const WhyDownload = () => {
 
       {/* CTA Button */}
       <div className="text-center">
-        <a
-          href="/apkdownload"
+        <Link
+          to="/apkdownload"
           className="btn-primary"
         >
           <Download className="w-6 h-6 mr-2" />
           <span>{t('home.download')}</span>
-        </a>
+        </Link>
         <p className="text-sm text-ink-soft mt-3">
           {t('home.privacy_note')}
         </p>

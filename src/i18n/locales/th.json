@@ -8,6 +8,10 @@
     "help": "ช่วยเหลือ",
     "download": "ดาวน์โหลด"
   },
+  "footer": {
+    "quickLinks": "ลิงก์ด่วน",
+    "contact": "ผู้ช่วยเกษตรกรไทย"
+  },
   "home": {
     "title": "ไร่ AI – Smart Farming",
     "subtitle": "เพื่อนเกษตรอัจฉริยะของคนไทย",

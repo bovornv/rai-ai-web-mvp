@@ -171,12 +171,12 @@ const Home = () => {
               <p className="text-lg text-white/90 mb-6">
                 {t('help.note')}
               </p>
-              <a
-                href="/apkdownload"
+              <Link
+                to="/apkdownload"
                 className="bg-white text-pri-600 px-8 py-4 rounded-xl2 font-bold text-lg inline-flex items-center space-x-2 hover:bg-white/90 transition-colors duration-200 shadow-lg"
               >
                 <span>{t('help.playStore')}</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
