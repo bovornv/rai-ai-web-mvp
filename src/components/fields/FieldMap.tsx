@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { MapPin, Wheat, TreePine } from 'lucide-react';
 import { FieldDemo } from '../../data/fields-demo.mock';
