@@ -64,7 +64,7 @@ const WhyDownload = () => {
       {/* CTA Button */}
       <div className="text-center">
         <Link
-          to="/apkdownload"
+          to="/download"
           className="btn-primary"
         >
           <Download className="w-6 h-6 mr-2" />

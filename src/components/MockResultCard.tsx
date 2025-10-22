@@ -153,7 +153,7 @@ const MockResultCard: React.FC<MockResultCardProps> = ({ item }) => {
             }
           </p>
           <a
-            href="/apkdownload"
+            href="/download"
             className="bg-white text-green-600 px-6 py-3 rounded-lg font-bold text-lg inline-flex items-center space-x-2 hover:bg-green-50 transition-colors duration-200 shadow-lg"
           >
             <Download className="w-5 h-5" />

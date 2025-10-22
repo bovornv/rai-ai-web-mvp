@@ -61,7 +61,7 @@ const Home = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 lg:mb-8">
                   <Link
-                    to="/apkdownload"
+                    to="/download"
                     className="btn-primary w-full sm:w-auto"
                   >
                     <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />

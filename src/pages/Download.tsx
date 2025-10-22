@@ -92,7 +92,7 @@ const DownloadPage = () => {
         title="ดาวน์โหลดแอป | Rai AI APK | ไร่ AI"
         description="ดาวน์โหลดแอป Rai AI สำหรับ Android ฟรี ตรวจโรคพืช ดูอากาศ จัดการแปลง"
         keywords="ดาวน์โหลดแอป Rai AI, APK, แอปเกษตร, Android"
-        url="https://raiai.app/apkdownload"
+        url="https://raiai.app/download"
       />
       <div className="min-h-screen bg-gradient-to-br from-rai-green-50 to-rai-teal-50 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -25,7 +25,7 @@ function App() {
               <Route path="fields" element={<Fields />} />
               <Route path="about" element={<About />} />
               <Route path="help" element={<Help />} />
-              <Route path="apkdownload" element={<DownloadPage />} />
+              <Route path="download" element={<DownloadPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

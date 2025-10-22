@@ -21,7 +21,7 @@ const DemoLimitCard = () => {
         
         <div className="flex justify-center">
           <a
-            href="/apkdownload"
+            href="/download"
             className="inline-flex items-center space-x-3 rounded-xl bg-green-600 px-8 py-4 text-white font-bold text-lg hover:bg-green-700 transition-colors duration-200 shadow-lg"
           >
             <Download className="w-6 h-6" />

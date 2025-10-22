@@ -52,7 +52,7 @@ const DownloadCTA = ({ primary = false, showQR = true }: DownloadCTAProps) => {
         {/* APK Download Link (Feature Flag) */}
         <div className="mt-4">
           <a
-            href="/apkdownload"
+            href="/download"
             className="text-green-200 hover:text-white text-sm underline"
           >
             {isThai ? 'ดาวน์โหลดไฟล์ APK (ทดสอบ)' : 'Download APK file (test)'}

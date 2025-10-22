@@ -188,7 +188,7 @@ const Help = () => {
             {t('help.note')}
           </p>
           <Link
-            to="/apkdownload"
+            to="/download"
             className="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center space-x-2 hover:bg-green-50 transition-colors duration-200 shadow-lg"
           >
             <span>{t('help.playStore')}</span>

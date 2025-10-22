@@ -20,7 +20,7 @@ const Header = () => {
     { key: 'fields', path: '/fields' },
     { key: 'about', path: '/about' },
     { key: 'help', path: '/help' },
-    { key: 'download', path: '/apkdownload' },
+    { key: 'download', path: '/download' },
   ];
 
   return (
