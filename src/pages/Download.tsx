@@ -7,20 +7,29 @@ import QRCode from 'qrcode';
 const DownloadPage = () => {
   const { t } = useTranslation();
   const [qrCodeUrl, setQrCodeUrl] = useState<string>('');
+  const [downloadStarted, setDownloadStarted] = useState<boolean>(false);
 
   // APK file information
   const apkInfo = {
-    version: '1.0.0',
-    size: '25.6 MB',
+    version: '1.0.1',
+    size: '28.5 MB',
     sha256: 'a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456',
-    downloadUrl: '/downloads/rai-ai-v1.0.0.apk'
+    downloadUrl: '/downloads/rai-ai-v.1.0.1.apk'
   };
 
   useEffect(() => {
     // Generate QR code for APK download
     const generateQRCode = async () => {
       try {
-        const qrCodeDataURL = await QRCode.toDataURL(window.location.origin + apkInfo.downloadUrl);
+        const downloadUrl = `${window.location.origin}${apkInfo.downloadUrl}`;
+        const qrCodeDataURL = await QRCode.toDataURL(downloadUrl, {
+          width: 300,
+          margin: 2,
+          color: {
+            dark: '#000000',
+            light: '#FFFFFF'
+          }
+        });
         setQrCodeUrl(qrCodeDataURL);
       } catch (error) {
         console.error('Error generating QR code:', error);
@@ -29,6 +38,12 @@ const DownloadPage = () => {
 
     generateQRCode();
   }, []);
+
+  const handleDownload = () => {
+    setDownloadStarted(true);
+    // Reset after 3 seconds
+    setTimeout(() => setDownloadStarted(false), 3000);
+  };
 
   const installSteps = [
     {
@@ -94,7 +109,7 @@ const DownloadPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Download Section */}
           <div className="space-y-8">
             {/* APK Info Card */}
@@ -120,31 +135,49 @@ const DownloadPage = () => {
               <div className="mt-8">
                 <a
                   href={apkInfo.downloadUrl}
-                  download
-                  className="btn-primary w-full text-center text-lg py-4 flex items-center justify-center space-x-2"
+                  download={`rai-ai-v${apkInfo.version}.apk`}
+                  onClick={handleDownload}
+                  className="btn-primary w-full text-center text-lg py-4 flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity"
                 >
                   <DownloadIcon className="w-5 h-5" />
-                  <span className="">ดาวน์โหลด APK</span>
+                  <span>ดาวน์โหลด APK v{apkInfo.version}</span>
                 </a>
+                <p className="text-sm text-gray-500 text-center mt-2">
+                  ขนาดไฟล์: {apkInfo.size}
+                </p>
+                {downloadStarted && (
+                  <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg">
+                    <p className="text-sm text-green-800 text-center">
+                      ✅ เริ่มดาวน์โหลดแล้ว! ตรวจสอบในโฟลเดอร์ Downloads
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* QR Code */}
             <div className="card text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 ">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
                 {t('download.qrCode')}
               </h3>
-              {qrCodeUrl && (
+              {qrCodeUrl ? (
                 <div className="flex justify-center">
                   <img
                     src={qrCodeUrl}
-                    alt="QR Code"
-                    className="w-48 h-48 border border-gray-200 rounded-lg"
+                    alt="QR Code for APK Download"
+                    className="w-40 h-40 sm:w-48 sm:h-48 border border-gray-200 rounded-lg"
                   />
                 </div>
+              ) : (
+                <div className="w-40 h-40 sm:w-48 sm:h-48 border border-gray-200 rounded-lg flex items-center justify-center mx-auto">
+                  <div className="text-gray-400 text-sm">กำลังสร้าง QR Code...</div>
+                </div>
               )}
-              <p className="text-sm text-gray-600 mt-4 ">
+              <p className="text-sm text-gray-600 mt-4">
                 สแกน QR Code ด้วยมือถือเพื่อดาวน์โหลด
+              </p>
+              <p className="text-xs text-gray-500 mt-2">
+                หรือคลิกปุ่มดาวน์โหลดด้านบน
               </p>
             </div>
 
