@@ -1,0 +1,9 @@
+To force Vercel to clear cache, go to:
+1. Vercel Dashboard → Your Project
+2. Settings → General
+3. Change Framework Preset from "Vite" to "Other"
+4. Save
+5. Change back to "Vite"
+6. Save
+7. Redeploy
+
