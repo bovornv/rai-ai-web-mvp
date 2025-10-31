@@ -11,10 +11,10 @@ const DownloadPage = () => {
 
   // APK file information
   const apkInfo = {
-    version: '1.0.7',
-    size: '28.5 MB',
+    version: '1.0.9',
+    size: '86 MB',
     sha256: 'a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456',
-    downloadUrl: '/downloads/rai-ai-v.1.0.7.apk'
+    downloadUrl: '/downloads/rai-ai-v.1.0.9.apk'
   };
 
   useEffect(() => {
