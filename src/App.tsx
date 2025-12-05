@@ -10,6 +10,7 @@ import Fields from './pages/Fields';
 import About from './pages/About';
 import Help from './pages/Help';
 import DownloadPage from './pages/Download';
+import Physics1 from './pages/Physics1';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="help" element={<Help />} />
               <Route path="download" element={<DownloadPage />} />
+              <Route path="physics1" element={<Physics1 />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
